@@ -1,7 +1,7 @@
 import { DecimalPipe } from '@angular/common';
 import { Component, Input, inject } from '@angular/core';
 
-import { BaseUserProfileComponent } from '../directives/base-user-profile.component';
+import BaseUserProfileComponent from '../directives/base-user-profile.component';
 
 @Component({
   selector: 'app-user-profile',
@@ -201,7 +201,7 @@ import { BaseUserProfileComponent } from '../directives/base-user-profile.compon
 
   `
 })
-export class UserProfileComponent {
+export default class UserProfileComponent {
 
   public base = inject(BaseUserProfileComponent);
 

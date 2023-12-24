@@ -1,6 +1,6 @@
 import { DecimalPipe } from '@angular/common';
 import { Component, Input, inject } from '@angular/core';
-import { BaseUserProfileComponent } from '../directives/base-user-profile.component';
+import BaseUserProfileComponent from '../directives/base-user-profile.component';
 
 @Component({
   selector: 'app-user-profile-dark',
@@ -157,9 +157,8 @@ import { BaseUserProfileComponent } from '../directives/base-user-profile.compon
     }
   `
 })
-export class UserProfileDarkComponent {
+export default class UserProfileDarkComponent {
   @Input() user: any;
 
   public base = inject(BaseUserProfileComponent);
-
 }
